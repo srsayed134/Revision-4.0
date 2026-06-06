@@ -1,0 +1,6 @@
+1. RAFCE :- arrow function 
+2. RFCE:- Normal function 
+3. In JSX one header is mandatory to use (not multiple only one)<section>content</section>
+4. In html tag have to close <img />
+5. Class have to write like classname className = ""
+6. In form <label for=""></label> have to write like <label htmlfor=""></label>

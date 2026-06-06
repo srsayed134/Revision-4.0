@@ -38,8 +38,52 @@ export default App; */
 // }
 // export default App 
 
+// 3. Jsx +++++++++++++++++++++++++++++
 
+// import React from 'react'
 
+// const App = () => {
+//   return (
+//     <div>
+//       <section>
+//         <p>This is test</p>
+//       </section>
+//     </div>
+//   )
+// }
+
+// export default App
+
+//Challenge 3 :-------------------------
+/*
+import React from 'react'
+import Jsx from './Challenges/03. JSX/Jsx'
+
+const App = () => {
+  return (
+    <div>
+      <Jsx/>
+    </div>
+  )
+}
+
+export default App
+*/
+
+//Challenge 4 :-------------------------
+
+import React from 'react'
+import Jsxrules from './Challenges/04. JSX rules/Jsxrules'
+
+const App = () => {
+  return (
+    <div>
+      <Jsxrules/>
+    </div>
+  )
+}
+
+export default App
 
 
 
