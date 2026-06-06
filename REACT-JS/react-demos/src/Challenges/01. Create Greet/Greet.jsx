@@ -1,16 +1,9 @@
-// import React from 'react'
-
-// function Greet() {
-//   return (
-//     <div>Greet</div>
-//   )
-// }
-
-// export default Greet
-
-// Refactor it to arrow function
+import React from 'react'
 
 const Greet = () => {
-    return <h1>Greet</h1>
+  return (
+    <div>Greet</div>
+  )
 }
-export default Greet;
+
+export default Greet
