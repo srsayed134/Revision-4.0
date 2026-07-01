@@ -11,24 +11,18 @@ const App = () => {
      return <h1>Sayed</h1>
 }
 export default App; */
-
 // Challenge 1 :- ----------------------
-
 // import React from 'react'
 // import Greet from './Challenges/01. Create Greet/Greet'
-
 // const App = () => {
 //   return (
 //     <div><Greet/></div>
 //   )
 // }
-
 // export default App
-
 //Challenge 2 :-------------------------
 // import React from 'react'
 // import Footer from './Challenges/02. Layout/Footer'
-
 // function App() {
 //   return (
 //     <div>
@@ -37,11 +31,8 @@ export default App; */
 //   )
 // }
 // export default App 
-
 // 3. Jsx +++++++++++++++++++++++++++++
-
 // import React from 'react'
-
 // const App = () => {
 //   return (
 //     <div>
@@ -51,14 +42,11 @@ export default App; */
 //     </div>
 //   )
 // }
-
 // export default App
-
 //Challenge 3 :-------------------------
 /*
 import React from 'react'
 import Jsx from './Challenges/03. JSX/Jsx'
-
 const App = () => {
   return (
     <div>
@@ -66,15 +54,12 @@ const App = () => {
     </div>
   )
 }
-
 export default App
 */
-
 //Challenge 4 :-------------------------
-
+/*
 import React from 'react'
 import Jsxrules from './Challenges/04. JSX rules/Jsxrules'
-
 const App = () => {
   return (
     <div>
@@ -82,12 +67,85 @@ const App = () => {
     </div>
   )
 }
-
 export default App
-
-
-
-
+*/
+// 4. _jsx is how react compile simple html to js 
+// Type: 1
+/*
+import React from 'react'
+function App() {
+  return (
+    <section>
+      <article>
+        <h1>My website</h1>
+        <p className='text'>Paragraph content</p>
+      </article>
+    </section>
+  )
+}
+export default App
+*/
+// Type: 2
+// copy section from type 1 to bable js website
+// 5. Expression in js ++++++++++++++++++++++
+/*
+import React from 'react'
+export default function App() {
+  return (
+    <div>2 + 2</div>
+  )
+} */
+// but 
+/*
+import React from 'react'
+const App = () => {
+  return (
+    <div>{2+2}</div>
+  )
+}
+export default App
+*/
+//but
+/*
+import React from 'react'
+const App = () => {
+  const name = "Sayed";
+  const multiply = (a, b) => a*b;
+  const customClass = "simple-class";
+  return (
+    <div>
+      <h1>This is {name}</h1>
+      <p>{multiply(2, 10)}</p>
+      <p>Friends list : {["Alex", "Jhon", "Wahed", "Jordan"]}</p>
+      <p className={customClass}>This customized class</p>
+    </div>
+  )
+}
+export default App
+*/
+// Challenge 6 :--------------------------------
+/*
+import React from 'react'
+import Greting from './Challenges/05. Greeting/Greting'
+const App = () => {
+  return (
+    <div><Greting/></div>
+  )
+}
+export default App
+*/
+/*
+import React from 'react'
+import ProductInfo from './Challenges/05. Greeting/ProductInfo'
+const App = () => {
+  return (
+    <div>
+      <ProductInfo/>
+    </div>
+  )
+}
+export default App
+*/
 
 
 
