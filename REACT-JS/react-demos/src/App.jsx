@@ -123,7 +123,7 @@ const App = () => {
 }
 export default App
 */
-// Challenge 6 :--------------------------------
+// Challenge 5 :--------------------------------
 /*
 import React from 'react'
 import Greting from './Challenges/05. Greeting/Greting'
@@ -251,4 +251,22 @@ const App = () => {
 export default App
 */
 
+// Challenge 6: ----------------------
+/*
+
+import React from 'react'
+import UserList from './Challenges/06. Lists/UserList'
+import ProductList from './Challenges/06. Lists/ProductList'
+
+const App = () => {
+  return (
+    <div>
+      <UserList/>
+      <ProductList/>
+    </div>
+  )
+}
+
+export default App
+*/
 
