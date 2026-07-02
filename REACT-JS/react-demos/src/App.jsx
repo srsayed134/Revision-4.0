@@ -69,7 +69,7 @@ const App = () => {
 }
 export default App
 */
-// 4. _jsx is how react compile simple html to js 
+// 4. _jsx is how react compile simple html to js  ++++++++++
 // Type: 1
 /*
 import React from 'react'
@@ -146,10 +146,109 @@ const App = () => {
 }
 export default App
 */
+/*
+import React from 'react'
+import Productinfo2 from './Challenges/05. Greeting/Productinfo2'
+const App = () => {
+  return (
+    <div>
+      <Productinfo2/>
+    </div>
+  )
+}
+export default App
+*/
+// 6. Lists in react +++++++++++++++++++++++
+/*
+import React from 'react'
 
+const App = () => {
+  const numbers = [1,2,3,4,5,6,7]
+  return (
+    <div>
+        {numbers.map(number => (
+          <ul key={number}>
+            <li>{number}</li>
+          </ul>
+        ))}
+    </div>
+  )
+}
 
+export default App
+*/
+// 07.Rendering Lists Of Data+++++++++++++++++++++
+/*
+import React from 'react'
 
+const App = () => {
 
+  const userInfo = [
+    {name: "Maxwell",
+      dob: 2003,
+      place: "Welington"
+    },
+    {
+      name: "Jhon",
+      dob: 2005,
+      place: "Dunkin"
+    },{
+      name: "Inor",
+      dob: 2000,
+      place: "Snispol"
+    },
+  ]
 
+  return (
+    <div>
+         {userInfo.map(user => (
+          <ul key={user.dob}>
+            <li>{user.name}</li>
+            <li>{user.dob}</li>
+            <li>{user.place}</li>
+          </ul>
+         ))}
+    </div>
+  )
+}
+
+export default App
+*/
+// Destructuring+++++++++++++++++++++++
+/*
+import React from 'react'
+
+const App = () => {
+  const userInfo = [
+    {name: "Maxwell",
+      dob: 2003,
+      place: "Welington"
+    },
+    {
+      name: "Jhon",
+      dob: 2005,
+      place: "Dunkin"
+    },{
+      name: "Inor",
+      dob: 2000,
+      place: "Snispol"
+    },
+  ]
+
+  return (
+    <div>
+      {userInfo.map(({name, dob, place})=> (
+        <ul>
+          <li>{name}</li>
+          <li>{dob}</li>
+          <li>{place}</li>
+        </ul>
+      ))}
+    </div>
+  )
+}
+
+export default App
+*/
 
 
