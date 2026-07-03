@@ -389,12 +389,91 @@ export default App
 
 // 10. Styling -----------------------
 
+//Option 1 
+/*
 import React from 'react'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <h1 style={{color: "red", backgroundColor: "white", padding: "3rem"}}>
+      This is red</h1>
+    </div>
   )
 }
 
 export default App
+*/
+// Option 2
+/*
+import React from 'react'
+
+const styles = {
+  color: "Blacke",
+  backgroundColor: "crimson",
+  padding: "2rem"
+}
+
+const App = () => {
+  return (
+    <div>
+      <h1 style={styles}>Inline Style</h1>
+    </div>
+  )
+}
+
+export default App
+*/
+//Option 3
+/*
+import "./File/styles.css";
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <h1>This is outline css</h1>
+    </div>
+  )
+}
+
+export default App
+*/
+
+// 1.Icons ++++++++
+//Get import address from website
+//<DiAptana /> also from website
+/*
+import { DiAptana } from "react-icons/di";
+
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <h1>This is a react icon <DiAptana /></h1>
+    </div>
+  )
+}
+
+export default App
+*/
+// Challenge 09: -------------------
+/*
+import React from 'react'
+import StyledCard from './Challenges/09.Style/StyledCard'
+import ProfileCard from './Challenges/09.Style/ProfileCard'
+import IconComponent from './Challenges/09.Style/IconComponent'
+
+const App = () => {
+  return (
+    <div>
+      <StyledCard/>
+      <ProfileCard/>
+      <IconComponent/>
+    </div>
+  )
+}
+
+export default App
+*/
