@@ -270,3 +270,131 @@ const App = () => {
 export default App
 */
 
+// 08. Props +++++++++++++++++++++++++++
+/*
+import React from 'react'
+
+const App = () => {
+  return <User name="Huxn" age={22} isMarried={false} hobbies={["Codding", "Reading", "Watching Movies"]} />
+}
+const User = (props) => {
+  return (<section>
+    <h1>Name: {props.name}</h1>
+    <h1>Age: {props.age}</h1>
+    <h1>Martitial Status: {props.isMarried}</h1>
+    <h1>Hobbies: {props.hobbies}</h1>
+  </section>
+  )
+}
+
+export default App
+*/
+
+//Props destrucring++++++++++++++++++++++
+/*
+import React from 'react'
+
+const App = () => {
+  return <User name="Huxn" age={22} isMarried={false} hobbies={["Codding", "Reading", "Watching Movies"]} />
+}
+const User = ({name, age, isMarried, hobbies}) => {
+  return (<section>
+    <h1>Name: {name}</h1>
+    <h1>Age: {age}</h1>
+    <h1>Martitial Status: {isMarried}</h1>
+    <h1>Hobbies: {hobbies}</h1>
+  </section>
+  )
+}
+
+export default App
+*/
+
+// Challenge 07: ------------------------------
+/*
+import React from 'react'
+import Person from './Challenges/07.Props/Person'
+import Product from './Challenges/07.Props/Product'
+import Children from './Challenges/07.Props/Children'
+
+const App = () => {
+  return (
+  <div>
+    <Person name = "Huxn" age = {20}/>
+    <Product name = "Mac air m5" price={1200}/>
+    <Children>
+      <h1>This is data from parent</h1>
+    </Children>
+    <Children>
+      <h1>This is data from parent 2</h1>
+    </Children>
+    <Children>
+      <h1>This is data from parent 3</h1>
+    </Children>
+  </div>
+  )
+}
+
+export default App
+*/ 
+// 09: Conditional rendering+++++++++++++
+
+/*
+const ValidPass = () => <h1>Valid Password</h1>;
+const InvalidPass = () => <h1>Invalid Password</h1>;
+
+// const Password = ({isValid}) => {
+//     if(isValid){
+//       return <ValidPass/>
+//     }
+//     return <InvalidPass/>
+// }
+
+//Ternery operator
+
+const Password =({isValid}) => {
+  return isValid ? <ValidPass/> : <InvalidPass/>
+}
+
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <Password isValid={false}/>
+    </div>
+  )
+}
+
+export default App
+*/ 
+//Challenge 08: ------------------------
+/*
+import React from 'react'
+import Weather from './Challenges/08.Conditional Rendering/Weather'
+import UserStatus from './Challenges/08.Conditional Rendering/UserStatus'
+import Gretting from './Challenges/08.Conditional Rendering/Gretting'
+
+const App = () => {
+  return (
+    <div>
+      <Weather temp={30}/>
+      <UserStatus user={true} admin={true}/>
+      <Gretting timeOfDay={23}/>
+    </div>
+  )
+}
+export default App
+*/
+
+// 10. Styling -----------------------
+
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
