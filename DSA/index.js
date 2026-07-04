@@ -1,4 +1,4 @@
-// Example of DSA 
+// Example of DSA ++++++++++++++
 
 //This is data structure
 /*
@@ -15,7 +15,7 @@ const findStudent = (allStudent, studentName) => {
 }
 findStudent(studentsDatabase, "Sayed")
 */
-// Big O notation
+// Big O notation +++++++++++++
 //BigO notation helps us understand how long an algorithm will 
 // take to run or how much memory it will need as ther amount of data 
 // it handles grows
@@ -45,4 +45,29 @@ const findProdunct = (groceriesitem, item) => {
 }
 
 findProdunct(groceries, "Egg")
+*/
+
+// Example of O(1) ++++++++++++++
+//(Imagine you have a box filled with items, and you know exectly where each item is located. To get a specific item, you go directly to its location, taking the same amount of time irrespective of how many items are in the box)
+/*
+const number = [1,2,3,4,5];
+const getElement = (arr, index) => arr[index];
+
+console.log(getElement(number, 2));
+*/
+//We know the position of index of number
+
+// O(n^2) +++++++++++++++++++++++++
+// (Imagine you have a box of items and want to comare each item with every other item to find specific pairs. As the number of items (n) increases, the number of comparisons (n^2) grows much faster)
+/*
+function findPairs(arr){
+    for (let i = 0; i <arr.length; i++){
+        for (let j = i + 1; j <arr.length; j++){
+            console.log(`Pair: ${arr[i]} ${arr[j]}`)
+        }
+    }
+}
+
+const numbers = [1,2,3,4,5];
+findPairs(numbers)
 */
