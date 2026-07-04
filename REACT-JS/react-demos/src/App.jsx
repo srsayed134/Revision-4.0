@@ -524,3 +524,54 @@ const App = () => {
 
 export default App
 */
+
+// 12.  State & Hooks Introduction
+// When we setCount something it rerender everything
+//How to update number
+//Example 
+/*
+import React, { useState } from 'react'
+
+const App = () => {
+
+  const [count, setCount] = useState(0);
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={increment}> + </button>
+      <button onClick={decrement}> - </button>
+    </div>
+  )
+}
+
+export default App
+*/
+//Example
+//How to update array
+/*
+import React, { useState } from 'react'
+
+const App = () => {
+  const [friends, setFriend] = useState(["Alex", "John", "Michel"])
+  const addOneFriend = () => setFriend([...friends, "Huxn WebDev"])
+  const removeFriend = () => setFriend(friends.filter(f => f !== "John"))
+  const updateFriend = () => setFriend(friends.map(f => f === "Alex" ? "Alex Smith" : f))
+  console.log(friends)
+  return (
+    <div>
+      {friends.map(f => (
+        <li key={Math.random()}>{f}</li>
+      ))}
+      <button onClick={addOneFriend}>Add new friend</button>
+      <button onClick={removeFriend}>Remove one friend</button>
+      <button onClick={updateFriend}>Update one friend</button>
+    </div>
+  )
+}
+
+export default App
+*/
+//How to update object
