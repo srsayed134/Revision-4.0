@@ -387,7 +387,7 @@ const App = () => {
 export default App
 */
 
-// 10. Styling -----------------------
+// 10. Styling +++++++++++++++++
 
 //Option 1 
 /*
@@ -471,6 +471,53 @@ const App = () => {
       <StyledCard/>
       <ProfileCard/>
       <IconComponent/>
+    </div>
+  )
+}
+
+export default App
+*/
+
+// 11. Events in React.js 
+/*
+import React from 'react'
+const handleClick = () => console.log(Math.round(Math.random() * 10))
+const Button = () => <button onClick={handleClick}>Click</button>
+
+const App = () => {
+  return (
+    <div><Button/></div>
+  )
+}
+
+export default App
+*/
+/*
+import React from 'react'
+
+const Copy = () => {
+  const copyHandler = () => {
+    console.log("Stop stealing my content")
+  }
+
+  return (
+    <p onCopy={copyHandler}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quidem doloribus iste obcaecati cum explicabo, temporibus tempore cumque saepe officia!</p>
+  )
+}
+*/
+/*
+const Move = () => {
+  const moveHandler = () => {console.log("Mouse is moved")}
+  return(
+    <p onMouseMove={moveHandler}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit corporis voluptatem quam accusantium eveniet culpa porro a voluptates odio iure hic consequatur aliquid, maxime debitis blanditiis magni dolor? Ipsam molestias numquam commodi provident possimus. Tenetur voluptatum nobis earum reprehenderit? Expedita omnis, eius libero quod debitis nesciunt explicabo ab ad.</p>
+  )
+}
+
+const App = () => {
+  return (
+    <div>
+      <Copy/> 
+      <Move/>
     </div>
   )
 }
