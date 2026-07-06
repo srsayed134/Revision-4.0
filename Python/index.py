@@ -69,3 +69,58 @@ z2 = 5
 z2 **= 2
 print(z2) #25
 """
+
+# 05: Strings in python 
+"""
+name = "Sayedur Rahamn"
+print(name)
+""" 
+# Multiline string 
+"""
+multiline_string = '''This is 
+
+multiline string '''
+
+print(multiline_string) 
+"""
+#String concatenation
+"""
+first_name = "Huxn"
+last_name = " Webdeb"
+
+full_name = first_name + last_name
+print(full_name)
+"""
+#String length
+"""
+name = "Huxn_webdev"
+name_len = len(name)
+print(name_len) #11
+print(len("Python")) #6
+"""
+
+#String indexing and slicing
+"""
+text = "Python"
+first_char = text[2]
+substring = text[1:4] #from 1 to 4 not include 4
+print(first_char)
+print(substring)
+"""
+
+#String Formatting
+"""
+name = "Huxn"
+age = 23
+
+formated_string = f"My name is {name} and i am {age} years old"
+print(formated_string)
+"""
+#Escape Characters
+"""
+escaped_string = "This is a line. \n This is new line" #its add extra new line 
+escaped_string2 = "This is a line. \t This is new line" #its add tab
+print(escaped_string)
+print(escaped_string2)
+"""
+
