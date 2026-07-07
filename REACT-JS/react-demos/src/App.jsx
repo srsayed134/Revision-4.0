@@ -336,7 +336,7 @@ const App = () => {
 }
 
 export default App
-*/ 
+*/
 // 09: Conditional rendering+++++++++++++
 
 /*
@@ -367,7 +367,7 @@ const App = () => {
 }
 
 export default App
-*/ 
+*/
 //Challenge 08: ------------------------
 /*
 import React from 'react'
@@ -478,7 +478,7 @@ const App = () => {
 export default App
 */
 
-// 11. Events in React.js 
+// 11. Events in React.js +++++++++++++++
 /*
 import React from 'react'
 const handleClick = () => console.log(Math.round(Math.random() * 10))
@@ -527,7 +527,7 @@ export default App
 
 // 12.  State & Hooks Introduction
 // When we setCount something it rerender everything
-//How to update number
+//How to update number ^^^^^^^^^^^^^^^^^^
 //Example 
 /*
 import React, { useState } from 'react'
@@ -550,7 +550,7 @@ const App = () => {
 export default App
 */
 //Example
-//How to update array
+//How to update array^^^^^^^^^^^^^^^^^^^
 /*
 import React, { useState } from 'react'
 
@@ -574,4 +574,112 @@ const App = () => {
 
 export default App
 */
-//How to update object
+//How to update object^^^^^^^^^^^^^^^^^
+
+/*
+import React, { useState } from 'react'
+
+const App = () => {
+  const [movie, setMovie] = useState({
+    title: "Equilizer 3",
+    rating: 3,
+  })
+  const handleChange = () => {
+    // const copyMovie = {
+    //   ...movie, rating: 4
+    // }
+
+    setMovie({...movie, rating: 7});
+  }
+
+  return (
+    <div>
+      <h1>{movie.title}</h1>
+      <h1>{movie.rating}</h1>
+      <button onClick={handleChange}>Change movie rating</button>
+    </div>
+  )
+}
+
+export default App
+*/
+//Change Array of object^^^^^^^^^^^^^^^^^^^
+/*
+import React, { useState } from 'react'
+
+const App = () => {
+
+  const [movies, setMovies] = useState([
+    {id: 1, title: "Spider Man", rating: 3},
+    {id: 2, title: "Superman", rating: 5},
+    {id: 3, title: "Batman", rating: 7},
+  ])
+
+  const handleNameChange = () => {
+    setMovies(movies.map(movie => (movie.id === 2 ? {...movies, title: "Jhon Wick"}: movie)))
+  }
+
+  return (
+    <div>
+     {movies.map(movie => <li key={Math.random()}>{movie.title}</li>)}
+     <button onClick={handleNameChange}>Movie name change</button>
+    </div>
+  )
+}
+
+export default App
+*/
+//Share state with other^^^^^^^^^^^^^^^^
+//Option -1
+/*
+import React, { useState } from 'react'
+import Comp2 from './File/usestate/Comp2'
+import Comp1 from './File/usestate/Comp1'
+
+const App = () => {
+  const[count, setCount] = useState(0)
+  return (
+    <div>
+      <Comp1 count={count} onClickHandler={() => setCount(count + 1)} />
+      <Comp2 count={count} onClickHandler={() => setCount(count - 1)} />
+    </div>
+  )
+}
+
+export default App
+*/
+//Option - 2
+/*
+import React from 'react'
+import ExampleOne from './File/usestate/ExampleOne'
+import ExampleTwo from './File/usestate/ExampleTwo'
+import ExampleThree from './File/usestate/ExampleThree'
+
+const App = () => {
+  return (
+    <div>
+      <ExampleOne/>
+      <ExampleTwo/>
+      <ExampleThree/>
+    </div>
+  )
+}
+
+export default App 
+*/
+// Challenge 10:- ++++++++++++++++
+
+import React from 'react'
+import Counter from './Challenges/10.UseState/Counter'
+import TodoList from './Challenges/10.UseState/TodoList'
+
+const App = () => {
+  return (
+    <div>
+      {/* <Counter/> */}
+      <TodoList/>
+    </div>
+  )
+}
+
+export default App
