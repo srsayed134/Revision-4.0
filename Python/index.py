@@ -123,4 +123,41 @@ escaped_string2 = "This is a line. \t This is new line" #its add tab
 print(escaped_string)
 print(escaped_string2)
 """
+#Booleans
+"""
+x = True
+y = False
+name = "Huxn"
+my_num = 19
+my_num2 = 20.24
+print(x)
+print(type(x))
+print(type(name))
+print(type(my_num))
+print(type(my_num2))
+"""
+#Type casting
 
+"""
+#float to int
+float_num = 3.1416
+print(type(float_num))
+print(float_num)
+
+int_num = int(float_num)
+print(int_num)
+print(type(int_num))
+
+#int to float
+int_num = 10
+float_num = float(int_num)
+print(type(float_num))
+print(float_num)
+
+#int to string
+
+int_num = 15.10
+str_num = str(int_num)
+print(str_num)
+print(type(str_num))
+"""
