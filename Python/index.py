@@ -161,3 +161,53 @@ str_num = str(int_num)
 print(str_num)
 print(type(str_num))
 """
+#Strig Method
+
+text = "Hello, World"
+"""
+upper_case = text.upper()
+print(upper_case)
+
+lower_case = text.lower()
+print(lower_case)
+
+capitalize_first = text.capitalize()
+print(capitalize_first)
+
+extra_text = "my name is huxn"
+title_phrase = extra_text.title()
+print(title_phrase)
+
+space_in_text = "           Python is fun!      "
+striped_text = space_in_text.strip()
+left_striped_text = space_in_text.lstrip()
+right_striped_text = space_in_text.rstrip()
+print(striped_text)
+print(left_striped_text)
+print(right_striped_text)
+"""
+
+#str.startwith(prefix) and str.endwith(suffix)
+"""
+filename = "example.text"
+start_with = filename.startswith("example");
+start_with2 = filename.startswith("nexample")
+print(start_with) #true
+print(start_with2) #false
+
+#str.replace(old, new)
+
+sentence = "I like programming in Java"
+replaced_sentence = sentence.replace("java", "python")
+print(replaced_sentence)
+"""
+#str.find() and str.index()
+"""
+phrase = "Python is powerful and Python is easy to learn"
+find_python = phrase.find("Python") 
+find_python1 = phrase.find("python")
+print(find_python) #o
+print(find_python1) #-1
+find_python2 = phrase.index("and")
+print(find_python2) #19
+"""
