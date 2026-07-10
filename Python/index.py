@@ -162,9 +162,9 @@ print(str_num)
 print(type(str_num))
 """
 #Strig Method
-
-text = "Hello, World"
 """
+text = "Hello, World"
+
 upper_case = text.upper()
 print(upper_case)
 
