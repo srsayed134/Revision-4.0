@@ -211,3 +211,10 @@ print(find_python1) #-1
 find_python2 = phrase.index("and")
 print(find_python2) #19
 """
+
+#str.split(separator)
+"""
+sentence = "This is an example text"
+splited_text = sentence.split(" ")
+print(splited_text) #['This', 'is', 'an', 'example', 'text']
+"""
