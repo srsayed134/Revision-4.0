@@ -218,3 +218,33 @@ sentence = "This is an example text"
 splited_text = sentence.split(" ")
 print(splited_text) #['This', 'is', 'an', 'example', 'text']
 """
+
+#str.count(substring)
+"""
+sentence = "Python is easy, we should learn python and use python"
+count_python = sentence.count("python")
+print(count_python) #2 because case sensetive
+"""
+#Comparison Operators
+"""
+a = 5
+b = 10
+d = 5
+
+c = a == b
+c1 = a == d
+c2 = a != b
+c3 = a != d
+c4 = a < b
+c5 = a > b
+c6 = a >= b
+c7 = a <= b
+print(c)#false
+print(c1)#true
+print(c2)#true
+print(c3)#false
+print(c4)#true
+print(c5)#false
+print(c6)#false
+print(c7)#true
+"""
