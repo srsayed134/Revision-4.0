@@ -22,8 +22,9 @@ const TodoList = () => {
   //after we clear input value by setInputValue("")
   const handleSubmit = e => {
     e.preventDefault() //Browser does not reload iteself when submit is clicked without any action browser always do default action in default action refresh is one of them. If browser refresh todos info will gone
-    if(inputValue.trim()){
-      setTodos([...todos, inputValue]);
+    if(inputValue.trim()){ //React note is "The state changed. I need to render the UI again."
+      setTodos([...todos, inputValue]); //This creates a new array, so React can easily see that the state reference has changed and trigger a re-render. //when we push() anything in array reference is not change but in copy and create system array reference will change when it create new one
+
       setInputValue("")
     }
   }

@@ -667,19 +667,45 @@ const App = () => {
 
 export default App 
 */
-// Challenge 10:- ++++++++++++++++
-
+// Challenge 10:- ++++++++++++++++(Redo)
+/*
 import React from 'react'
 import Counter from './Challenges/10.UseState/Counter'
 import TodoList from './Challenges/10.UseState/TodoList'
+import Profile from './Challenges/10.UseState/Profile'
+import ShopppngList from './Challenges/10.UseState/ShopppngList'
 
 const App = () => {
   return (
     <div>
-      {/* <Counter/> */}
-      <TodoList/>
+      { <Counter/> }
+      { <TodoList/> }
+      { <Profile/> } 
+      {<ShopppngList/> } //Revise
     </div>
   )
 }
 
 export default App
+*/
+
+// 12. Portal in reactjs 
+//Portal is a feature that allows you to render a child component into a DOM node that exists outside the hierarchy of the parent component. This can be useful for scrnarios like modelsm, tooltips or dropdowns, where you want to break out of the usual parent-child strudture and render in a different part of the DOM
+/*
+import React from 'react'
+import CopyInput from './File/Portal/CopyInput'
+import Swithc from './File/Portal/Swithc'
+
+const App = () => {
+  return (
+    <div>
+      { <CopyInput/> }  //Revise
+      { <Swithc/> } //Revise
+    </div> 
+  )
+}
+
+export default App
+*/
+
+// 13. useEffect() in reactjs
