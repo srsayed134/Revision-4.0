@@ -709,3 +709,13 @@ export default App
 */
 
 // 13. useEffect() in reactjs
+
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
