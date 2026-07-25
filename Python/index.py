@@ -302,10 +302,40 @@ print("Password set sucsesfully")
 """ 
 
 choice = None
-
+"""
 while choice != "q":
     print("Option 1")
     print("Option 2")
     print("Option 3")
     choice = input("Enter your choice. Or type q exit: ")
     print("We exit")
+"""
+
+#Lists
+#Lists number
+numbers = [1,2,3,4,5,6]
+numbers2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+print(numbers)
+print(len(numbers))
+#Access list
+second_item = numbers[2]
+print(second_item) #3
+sliced_numbers = numbers2[2:10:2]
+print(sliced_numbers)
+
+#List String
+fruits = ["Mango", "Pineapple", "Orange", "Watermelon", "Guaba", "Banana"]
+# print(len(fruits))
+#Access list
+second_fruit = fruits[1] 
+# print(second_fruit)
+sliced_fuite_item = fruits[2:4]
+# print(sliced_fuite_item)
+#Update list 
+fruits[2] = "Lemon"
+print(fruits) #['Mango', 'Pineapple', 'Lemon', 'Watermelon', 'Guaba', 'Banana']
+
+#Mixed lists
+allOfThat = ["Huxn", 1, True, 3.1416]
+# print(allOfThat)
+# print(len(allOfThat))
