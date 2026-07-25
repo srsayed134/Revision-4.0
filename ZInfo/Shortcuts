@@ -4,3 +4,5 @@ command + shift + e = open file
 command + b = left pannel open close
 command + p = search
 command + n - command + s = new file create
+echo "PROMPT='\$ '" >> ~/.zshrc
+source ~/.zshrc = change to only $ 

@@ -246,6 +246,66 @@ print(c3)#false
 print(c4)#true
 print(c5)#false
 print(c6)#false
-print(c7)#true
+print(c7)#true 
 """
-print("Hello, World")
+
+#Logical operator (and, or , not)
+""" 
+print(True and True) #True
+print(True & False) #False
+print(True | False) #True
+print(False or False) #False
+rint(not True)#False
+print(not False)#True
+print(False)#True
+""" 
+#conditional statement
+"""
+x = 3
+if x > 5:
+    print("x is postive")
+elif x < 0:
+    print("X is negative")
+else:
+    print("There have no number allwed from 1 to 5")
+"""
+#Loops 
+#For loops
+"""
+for i in range(10):
+    print("My name is huxn")
+"""
+#Range(start, end)
+#range(star, stop, step)
+"""
+for i in range(2, 22):
+    print("The number start from ", i )
+
+for i in range(3, 15, 3):
+    print("This is another step exmaple", i)
+
+words = "Python"
+
+for char in words:
+    print(char)
+    print(char.split( )
+"""
+#While loops
+"""
+password = ""
+
+while len(password) < 8:
+    password = input("Enter a password al least 8 charecter: ")
+    print("Password need to be at least 8 charecter")
+
+print("Password set sucsesfully")
+""" 
+
+choice = None
+
+while choice != "q":
+    print("Option 1")
+    print("Option 2")
+    print("Option 3")
+    choice = input("Enter your choice. Or type q exit: ")
+    print("We exit")
