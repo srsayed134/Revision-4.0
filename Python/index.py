@@ -313,6 +313,7 @@ while choice != "q":
 
 #Lists
 #Lists number
+"""
 numbers = [1,2,3,4,5,6]
 numbers2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 print(numbers)
@@ -322,8 +323,9 @@ second_item = numbers[2]
 print(second_item) #3
 sliced_numbers = numbers2[2:10:2]
 print(sliced_numbers)
-
+"""
 #List String
+"""
 fruits = ["Mango", "Pineapple", "Orange", "Watermelon", "Guaba", "Banana"]
 # print(len(fruits))
 #Access list
@@ -334,8 +336,106 @@ sliced_fuite_item = fruits[2:4]
 #Update list 
 fruits[2] = "Lemon"
 print(fruits) #['Mango', 'Pineapple', 'Lemon', 'Watermelon', 'Guaba', 'Banana']
-
+"""
 #Mixed lists
+"""
 allOfThat = ["Huxn", 1, True, 3.1416]
 # print(allOfThat)
 # print(len(allOfThat))
+"""
+
+#Rmoving/deleting items
+"""
+numbers3 = [1,2,4,6,7,87,8,42,34,63]
+print(numbers3)
+del numbers3[3]
+print(numbers3)
+numbers3.remove(4)
+print(numbers3)
+"""
+#1D, 2D, 3D lists
+"""
+#1D
+numbers1d = [1,2,3,4,5,6]
+#2D
+numbers2d= [
+    [1,2,3,4,5],
+    [1,2,3,4,5,6], 
+]
+numbers3d = [
+    1,[2,3,4,5,[6,7,8,9]]
+]
+#3D 
+print(numbers2d)
+print(numbers3d)
+
+#Access code
+print(numbers2d[1][2])
+print(numbers3d[1][4][2])
+"""
+
+#Built in method
+"""
+my_lists = [1,2,3,4]
+my_lists.append(5)
+print(my_lists)
+my_lists2 = [1,2,3,4]
+my_lists2.extend([5,6,7])
+print(my_lists2)
+my_lists3 = [1,2,3,4]
+my_lists3.insert(2, 4)
+print(my_lists3)
+my_lists4 = [1,2,3,4,5]
+my_lists4.remove(4) #delete before index 
+print(my_lists4)
+my_lists5 = [1,2,3]
+my_lists5.pop(1)
+print(my_lists5)
+my_lists6 = [1,2,3,4,5]
+my_lists6.pop()
+print(my_lists6)
+my_lists7 = [4,3,6,8,2,8,9,10]
+my_lists7.sort()
+print(my_lists7)
+my_lists8 = [4,5,9]
+copied_list = my_lists8.copy()
+print(copied_list)
+
+#loop in list
+for number in my_lists7:
+    print(number)
+#while loop in list
+
+my_list9 = [1,2,3,4,5]
+i = 1
+
+while i < len(my_list9):
+    print(i)
+    i += 1
+"""
+
+#In operator
+
+#String
+text = "This is example"
+check = "x" in text
+print(check) #true
+
+#List
+my_List = [1,2,4,5,6]
+check1 = 3 in my_List
+check2 = 4 in my_List
+print(check1) #false
+print(check2) #true
+
+#substring
+my_sentence = "Python is powerful"
+check3 = "Python" in my_sentence
+check4 = "python" in my_sentence
+print(check3) #True 
+print(check4) #False #Because it is case-sensetive
+
+#Loop
+
+for i in range(10):
+    print(i)
