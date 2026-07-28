@@ -415,13 +415,14 @@ while i < len(my_list9):
 """
 
 #In operator
-
+"""
 #String
 text = "This is example"
 check = "x" in text
 print(check) #true
 
 #List
+
 my_List = [1,2,4,5,6]
 check1 = 3 in my_List
 check2 = 4 in my_List
@@ -439,3 +440,18 @@ print(check4) #False #Because it is case-sensetive
 
 for i in range(10):
     print(i)
+
+"""
+#List unpacking
+my_list = [1,2,3,4,5]
+a, b, c, d, e = my_list
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+my_list2 = [1,2,3,4,5,6]
+a, b, *rest = my_list2
+print(a)
+print(b)
+print(rest)
