@@ -443,6 +443,7 @@ for i in range(10):
 
 """
 #List unpacking
+"""
 my_list = [1,2,3,4,5]
 a, b, c, d, e = my_list
 print(a)
@@ -455,3 +456,36 @@ a, b, *rest = my_list2
 print(a)
 print(b)
 print(rest)
+"""
+
+#Tuple data structure :- it is immutable ordered, you cannot modify it after created but list is mutable and unordered
+ 
+my_tuple = (1,2,3,"Huxn", 3.5)
+"""
+print(my_tuple)
+print(my_tuple[3])
+print(type(my_tuple))
+
+# my_tuple[2] = 7 #error because immutable ÷
+# print(my_tuple) #error
+
+#you can create tuple with modified content 
+new_tuple = my_tuple + (5, "Jhon")
+print(new_tuple)
+
+new_tuple2 = 2,3,4,5,6
+print(type(new_tuple2)) #Class tuple 
+not_tuple = 2
+print(type(not_tuple))#not tuple 
+not_tuple = (2)
+print(type(not_tuple))#int
+new_tuple3 = (2,)
+print(type(new_tuple3))#tuple
+
+friends_tuple = ("Alex", "Jordan", "Simran")
+
+for friend in friends_tuple:
+    print(friend)
+"""
+
+
