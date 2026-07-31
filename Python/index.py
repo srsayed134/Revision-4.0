@@ -488,4 +488,16 @@ for friend in friends_tuple:
     print(friend)
 """
 
+#Dictionary
 
+emthy_dict = {}
+print(type(emthy_dict))#class dict
+
+student_info = {"name": "Niom", "age": 20, "grade" : "A+"}
+print(student_info)
+print(type(student_info))
+print(student_info["name"]) #Niom
+print(student_info["age"]) #20
+print(student_info["grade"]) #A+
+
+ 
