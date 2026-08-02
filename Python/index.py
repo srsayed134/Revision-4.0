@@ -489,7 +489,7 @@ for friend in friends_tuple:
 """
 
 #Dictionary
-
+"""
 emthy_dict = {}
 print(type(emthy_dict))#class dict
 
@@ -500,4 +500,115 @@ print(student_info["name"]) #Niom
 print(student_info["age"]) #20
 print(student_info["grade"]) #A+
 
- 
+person = dict(name= "Bob", age=25, city= "London")
+print(person)
+print(person["name"])
+
+student_info2 = {"name": "Michel", "age" : 20, "is_student" : True, "Grade" : [56,76,23]}
+print(student_info2["is_student"]) #True
+print(student_info2["Grade"][2]) #23
+
+person_info = {
+    "person1" : {"name": "Bob", "Age" : 22, "Country": "France"},
+    "person2" : {"name": "Alex", "Age" : 32, "Country": "Jordan"},
+    "person3" : {"name": "Simon", "Age" : 45, "Country": "England"},
+}
+
+print(person_info["person1"]["name"]) #Bob
+print(person_info["person2"]["Age"]) #32
+"""
+
+#Using list of tuples
+"""
+tuple_list = [("name", "Eva"), ("age", 22), ("City", "Berlin")]
+from_tuple_to_dict = dict(tuple_list)
+print(from_tuple_to_dict)
+"""
+
+#Accessing dictionary
+"""
+my_dict = {"name": "Jhon Doe", "age" :20, "Origin": "Spanish"}
+print(my_dict["name"])#Jhon Doe
+
+print(my_dict.get("age"))#20
+print(my_dict.get("grade"))#None
+"""
+#Iterating dictionary
+"""
+my_dict = {"name": "Alex", "Age": 24, "Social": "Reddit"}
+
+for key in my_dict:
+    print(f"{key}: {my_dict[key]}")
+
+for key,value in my_dict.items():
+    print(f"{key}: {value}")
+""" 
+
+#Updating specific dictionary
+"""
+my_dict = {"Name": "Huxn", "Age": 23}
+my_dict["Country"] = "USA"
+
+print(my_dict)
+my_dict["Age"] = 24
+print(my_dict)
+"""
+#Uodate dictionary by method
+"""
+my_dict2 = {"FirstName": "Jhon", "Age": 20}
+new_dict = {"LastName": "Dow", "Country": "Uk"}
+
+my_dict2.update(new_dict)
+print(my_dict2)
+"""
+#Update with keyword arguments
+"""
+my_dict3 = {"Name": "Lilian", "Age": 8}
+my_dict3.update(country= "USA", State= "New York")
+print(my_dict3)
+"""
+#Using setDefault() to add default value
+"""
+my_dict4 = {"Name": "Jhon", "Status": "Single"}
+my_dict4.setdefault("City", "New York")
+print(my_dict4)
+"""
+#Delete in dictionary
+"""
+my_dict = {"Name": "PK", "Release": 2009, "Genre": "Comedy"}
+# del my_dict[" Release"]
+print(my_dict)
+
+# my_dict.pop("Genre")
+print(my_dict)
+
+my_dict.popitem()#It removes the last item of dictionary
+print(my_dict)
+my_dict.clear()#It removes the the whool dictionary key and item
+print(my_dict)
+"""
+
+#Sets are unorder that is why you can not access like list, tuples, dictionary and also unique do not suppert duplicate item and order value by self
+
+my_set = set({1,2,3,4,5})
+print(my_set)
+print(type(my_set))
+
+my_new_set = {1,2,3,4,5}
+print(type(my_new_set))
+
+my_new_set1 = {1,2,3,4,4,5,6,5,6}
+print(my_new_set1) #{1, 2, 3, 4, 5, 6}
+
+my_new_set2 = {2,4,3,8,7}
+print(my_new_set2)
+
+my_new_set3 = {"Alex", "Jhon", "Simon", "Nikkel", "Jhon"}
+print(my_new_set3) #Result going to be random and change over time each output
+
+games = {"GTA 5", "The withcer", "Call of duty", "DOTA2"}
+games.add("Clash of Clan")
+print(games)
+
+games.update(["Prince of persia", "Assasin credd"])
+print(games)
