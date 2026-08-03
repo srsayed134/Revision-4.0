@@ -590,6 +590,7 @@ print(my_dict)
 
 #Sets are unorder that is why you can not access like list, tuples, dictionary and also unique do not suppert duplicate item and order value by self
 
+"""
 my_set = set({1,2,3,4,5})
 print(my_set)
 print(type(my_set))
@@ -612,3 +613,4 @@ print(games)
 
 games.update(["Prince of persia", "Assasin credd"])
 print(games)
+"""
