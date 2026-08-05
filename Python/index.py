@@ -613,4 +613,79 @@ print(games)
 
 games.update(["Prince of persia", "Assasin credd"])
 print(games)
+
+games.update(["Mobile Legend"])
+print(games)
+
+movies = {"PK", "Titanic", "Troy"}
+movies.remove("Troy")
+print(movies)
+movies.clear()
+print(movies)
 """
+"""
+games = {"GTA 5", "The withcer", "Call of duty", "DOTA2"}
+for game in games:
+    print(game)
+"""
+
+#Function
+
+#only funtion
+def greet():
+    print("This is an example")
+
+greet()
+#function with argument
+
+def greet1(name):
+    print(f"Hello this is {name}")
+
+greet1("Alex")
+
+def greet2(x,y):
+    result= x + y
+    print(result)
+
+greet2(3,4)
+
+#Default parameter
+
+def greet3(x,y = 7):
+    result= x * y
+    print(result)
+
+greet3(8,9)#72
+greet3(8)#56
+
+def greet4(message, num_exclamation_marks = 3):
+    print(message + "!" * num_exclamation_marks)
+
+greet4("Hello")#Hello!!!
+
+#Named peremeter
+def Details(name, age, country):
+    print("Name", name)
+    print("Age", age)
+    print("Country", country)
+
+Details(name="HuXn", age=23, country="UK")
+
+#Retun 
+
+def Two_sum(x, y):
+    result = x + y
+    return result
+
+result = Two_sum(50, 33)
+print(result)
+#Multiple return
+
+def Square_Cube(x):
+    square = x ** 2
+    cube = x ** 3
+    return square,cube
+
+square, cube = Square_Cube(5)
+print(square)
+print(cube)
