@@ -630,7 +630,7 @@ for game in games:
 """
 
 #Function
-
+"""
 #only funtion
 def greet():
     print("This is an example")
@@ -689,3 +689,28 @@ def Square_Cube(x):
 square, cube = Square_Cube(5)
 print(square)
 print(cube)
+
+#Nested funtion
+
+def Outer_funtion(x):
+    def Inner_funtion(y):
+        return x + y
+
+    result = Inner_funtion(5)
+    return result
+
+Result = Outer_funtion(5)
+print(Result)
+"""
+
+#Lamda function
+
+add = lambda x,y : x + y
+result = add(6,6)
+print(result)
+
+def apply_def(a,b, operation):
+    return operation(a,  b)
+
+result2 = apply_def(5,6, lambda a,b: a+b)
+print(result2)
