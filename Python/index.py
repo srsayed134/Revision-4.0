@@ -704,7 +704,7 @@ print(Result)
 """
 
 #Lamda function
-
+"""
 add = lambda x,y : x + y
 result = add(6,6)
 print(result)
@@ -714,3 +714,61 @@ def apply_def(a,b, operation):
 
 result2 = apply_def(5,6, lambda a,b: a+b)
 print(result2)
+""" 
+
+############## End intermadiate part or bigenner ##############
+
+#Modeule
+#Import full file
+"""
+import example_module_1
+
+print(example_module_1.my_fav_num)#76
+print(example_module_1.add_num(3,4))#7
+print(example_module_1.multi_num(4,6))#24
+print(example_module_1.test())
+"""
+#Import full file and give a alias name
+"""
+import example_module_1 as test
+print(test.add_num(3,5))
+"""
+#Import specific function
+"""
+from example_module_1 import test
+test()
+
+from example_module_1 import add_num
+print(add_num(2,3))
+
+#Import multiple one is create alias
+from example_module_1 import (my_fav_num as fav_num, multi_num, division_num)
+print(fav_num)
+print(multi_num(5,6)) 
+print(division_num(10,2))#5.0
+print(int(division_num(10,2)))#5
+"""
+
+#Import all module #For access any funtion or variable there is no need to typw example_module_1.add_num() insteade add_num(2,3 )
+"""
+from example_module_1 import *
+print(add_num(4,5))#9
+test()#This is practice
+print(multi_num(3,5))#15
+print(int(division_num(20,5)))#4 
+"""
+
+#Import date and time
+"""
+from datetime import datetime
+
+date = datetime(year=2023, month=3, day=23, hour=3, minute=20, second=34)
+print(date)
+date2shothand = datetime(2022,3,4,19,20,54)
+print(date2shothand)
+
+print(f"Year: {date.year}")
+print(f"Year: {date2shothand.year}")
+print(f"Month: {date.month }")
+print(f"Hour :{date.hour}")
+"""
