@@ -771,4 +771,87 @@ print(f"Year: {date.year}")
 print(f"Year: {date2shothand.year}")
 print(f"Month: {date.month }")
 print(f"Hour :{date.hour}")
+
+print(date.now())
+print(date.now().time())
+print(date.now().hour)
+print(date.now().minute)
 """
+
+#Class
+"""
+class Person:
+    def talk(self):
+        print("My name in huxn")
+
+#This is a instance for Person and it it an object 
+Huxn = Person()
+Huxn.talk()
+"""
+#__init__ is a  Constructor which allow us to create variable in class
+#This is an example of one person 
+"""
+class Person:
+    def __init__(self):
+        self.name = "Huxn"
+        self.age = 20
+        self.location = "USA"
+
+    def talk(self):
+        #If we don't use self if there is name in global the variable will be use in this class module. SO we should use self keyword for safety
+        print(f"The name is {self.name} and his age is {self.age}. He is from {self.location}")
+
+Person1 = Person()
+#Access method
+Person1.talk()
+
+#Access variable
+Person1_name = Person1.name
+print(Person1_name)#Huxn
+"""
+
+#This is an example of multiple person 
+"""
+class Person:
+    def __init__(self, name, age, location):
+        self.name = name
+        self.age = age
+        self.location = location
+
+    def details(self):
+        print(f"I am {self.name}. I am {self.age} years old. My birth place is {self.location}")
+
+Jordan = Person("Jordan", 20, "USA")
+Jhon = Person("Jhon", 23, "Uk")
+Rakesh = Person("Rakesh", 19, "India")
+Hammam = Person("Hammam", 24, "UAE")
+Dimitri = Person("Dimitri", 22, "Russia")
+Nimiko = Person("Nimiko", 18, "Japan")
+
+#Access all of them details
+Nimiko.details()
+Jhon.details()
+Rakesh.details()
+
+#Access all birthplace
+Nimiko_location = Nimiko.location
+Jordan_location = Jordan.location
+print(Nimiko_location)#Japan
+print(Jordan_location)#USA
+"""
+#Static variable in class
+
+class Car:
+    car_number = 0 
+
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        Car.car_number += 1
+
+car1 = Car("Toyota", "Camry")
+car2 = Car("Honda", "Accord")
+car2 = Car("Jeep", "Rubicon")
+car2 = Car("Toyota", "Fielder")
+
+print(Car.car_number)
