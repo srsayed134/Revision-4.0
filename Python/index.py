@@ -840,7 +840,7 @@ print(Nimiko_location)#Japan
 print(Jordan_location)#USA
 """
 #Static variable in class
-
+"""
 class Car:
     car_number = 0 
 
@@ -855,3 +855,61 @@ car2 = Car("Jeep", "Rubicon")
 car2 = Car("Toyota", "Fielder")
 
 print(Car.car_number)
+"""
+
+#OOP (Object oriented programming)
+#Inheritance
+"""
+#Super/Parents/ Base class 
+class Animal:
+    #Variable by constructor
+    def __init__(self, animal_name):
+        self.animal_name = animal_name
+
+    #Method
+    def animal_info(self):
+        print(f"This is a {self.animal_name}")
+
+#Instance from parent element
+Dog = Animal("Dog")
+Dog.animal_info()
+
+#Child/derived/sub class
+class Dog1(Animal):
+   def bark(self):
+      print("Woof Woof")
+
+#Instance from child animal
+Dog1 = Dog1("Cat")
+Dog1.bark()
+Dog1.animal_info()
+"""
+#Variable borrow from parent class
+
+class Animal:
+    def __init__(self, breed, color, speed):
+        self.breed = breed
+        self.color = color
+        self.speed = speed
+
+    def details(self):
+        print(f"This is an {self.breed} and color is {self.color} but speed is {self.speed}")
+
+class Dog(Animal):
+    def __init__(self,animal_name, breed, color, speed):
+        super().__init__(breed, color, speed)
+
+        self.animal_name = animal_name
+
+    def bark(self):
+        print(f"The {self.animal_name} is a pet. It is a {self.breed} breed")
+
+#Instance of Animal(Parent element)
+Animal_Obj = Animal("German", "Brown", "Fast")
+Animal_Obj.details()
+
+#Instance of Dog Element(Child element)
+Dog_Obj = Dog("Dimitri", "Persian", "White", "Slow")
+Dog_Obj.bark()
+Dog_Name = Dog_Obj.animal_name
+print(Dog_Name)
