@@ -810,7 +810,7 @@ Person1_name = Person1.name
 print(Person1_name)#Huxn
 """
 
-#This is an example of multiple person 
+#This is an example of multiple person in class
 """
 class Person:
     def __init__(self, name, age, location):
@@ -857,7 +857,7 @@ car2 = Car("Toyota", "Fielder")
 print(Car.car_number)
 """
 
-#OOP (Object oriented programming)
+#OOP (Object oriented programming)++++++++++++
 #Inheritance
 """
 #Super/Parents/ Base class 
@@ -885,7 +885,7 @@ Dog1.bark()
 Dog1.animal_info()
 """
 #Variable borrow from parent class
-
+"""
 class Animal:
     def __init__(self, breed, color, speed):
         self.breed = breed
@@ -913,3 +913,30 @@ Dog_Obj = Dog("Dimitri", "Persian", "White", "Slow")
 Dog_Obj.bark()
 Dog_Name = Dog_Obj.animal_name
 print(Dog_Name)
+"""
+
+#Polymorphism
+#Method overiding
+"""
+class Animal:
+    def make_sound(self):
+        print("Generic animal sound")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("Woof")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Mewwo")
+
+Dog_Obj = Dog()
+Cat_Obj = Cat()
+
+Dog_Obj.make_sound()
+Cat_Obj.make_sound()
+"""
+#File
+"""
+user.info = open("User.text", "w")
+"""
