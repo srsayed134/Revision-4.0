@@ -6,3 +6,5 @@ command + p = search
 command + n - command + s = new file create
 echo "PROMPT='\$ '" >> ~/.zshrc
 source ~/.zshrc = change to only $ 
+option + z = fit line in vs code display
+Shit + space = suggestion (vs)

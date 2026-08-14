@@ -24,9 +24,4 @@ elif random_number == 3:
     computer_guess = "Scissors"
 
 
-
-while True:
-    if human_guess == computer_guess:
-        print("Match draw")
-        break
-    elif human_guess
+#Not complete or uodated
