@@ -450,13 +450,36 @@ export default App
 /*
 import { DiAptana } from "react-icons/di";
 
-import React from 'react'
+import React from 'react'F
 
 const App = () => {
   return (
     <div>
       <h1>This is a react icon <DiAptana /></h1>
     </div>
+  )
+}
+
+export default App
+*/
+// 10(2). Styrling +++++++++++++++++
+/*
+import React from 'react'
+import "./File/Style/styles.css"
+import { FaPaperPlane } from "react-icons/fa";
+
+
+const App = () => {
+  const styles = {color: "green"}
+  return (
+    <div>
+      <h1 style={{color: "red", backgroundColor: "black", }}>Inline stling</h1>
+      <h1 style={styles}>Class styling</h1>
+      <h1>Inside css file</h1>
+      <p>This is a telegram icon <FaPaperPlane size={40}/></p>
+
+    </div>
+    
   )
 }
 
@@ -526,6 +549,30 @@ const App = () => {
   )
 }
 
+export default App
+*/
+// 11(2).Events in react +++++++++++++
+/*
+import React from 'react'
+
+const handleClick =() => console.log(Math.round(Math.random() * 10))
+
+const Button = () => {
+  return <button onClick={handleClick}>Click</button>
+}
+const handleCopy = () => console.log("Stop stealing my content")
+
+const handlemouse = () => console.log("Stop hovering mouse on this green text")
+
+const App = () => {
+  return ( 
+    <div >
+    <Button/>
+    <h1 onCopy={handleCopy}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quasi quam blanditiis corrupti, odio ut nam accusamus quos sit modi voluptates fugit voluptas, inventore rem, nihil reiciendis velit maxime. Ad!</h1>
+    <h1 onMouseMove={handlemouse} style={{backgroundColor: "green"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam ad porro harum illum iste, et sint incidunt doloribus mollitia.</h1>
+    </div> 
+  )
+}
 export default App
 */
 
@@ -714,6 +761,7 @@ export default App
 
 // 13. useEffect() in reactjs
 
+/*
 import React from 'react'
 
 const App = () => {
@@ -723,3 +771,4 @@ const App = () => {
 }
 
 export default App
+*/
