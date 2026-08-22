@@ -772,3 +772,127 @@ const App = () => {
 
 export default App
 */
+
+// 12(1):+++++++++++++++++++++
+//Updating number ^^^^^^^^^^^
+/*
+import React, { useState } from 'react'
+
+function App() {
+  const [count, setCount] = useState(0)
+  
+  const countHandlePlus = () => setCount(count + 1)
+  const countHandleMinus = () => setCount(count - 1)
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={countHandlePlus}>Plus Count</button>
+      <button onClick={countHandleMinus}>Minus Count</button>
+    </div>
+  )
+}
+
+export default App
+*/
+
+//Updating array ^^^^^^^^^^^^^^^^
+/*
+import React from 'react'
+import { useState } from 'react'
+
+const App = () => {
+  const [friends, setFriends] = useState(["Alex", "Mia", "Jhon"])
+  const addFriend = () => {
+    setFriends([...friends, "Huxn"])
+  }
+  const removeAlex = () => {
+    setFriends(friends.filter(f => f != "Alex"))
+  }
+  const updateFriend = () => {
+    setFriends(friends.map(f => f == "Mia" ? "Mia nim": f))
+  }
+  return (
+    <div>
+      {friends.map(f => (
+        <li key={Math.random() * 10}>{f}</li>
+      ))}
+      <button onClick={addFriend}>Add friend</button>
+      <button onClick={removeAlex}>Remove Alex</button>
+      <button onClick={updateFriend}>Update friend</button>
+    </div>
+  )
+}
+
+export default App
+*/
+
+//Updating object ^^^^^^^^^^^^^^
+/*
+import React, { useState } from 'react'
+
+const App = () => {
+  const [movie, setMovie] = useState({
+    name: "PK",
+    releaseDate: 2009
+  })
+  const handleChange =() =>  setMovie({...movie, releaseDate: 2010})
+  return (
+    <div>
+        <h1>{movie.name}</h1>
+        <h1>{movie.releaseDate}</h1>
+
+        <button onClick={handleChange}>Change Release Date</button>
+    </div>
+  )
+}
+
+export default App
+*/
+//Updating multiple object ^^^^^^^^^^^^
+/*
+import React, { useState } from 'react'
+
+const App = () => {
+  const [movies, setMovies] = useState([
+    {id:1, name:"Troy", year: 2004},
+    {id:2, name:"Titanic", year: 1998},
+    {id:3, name:"3idiots", year: 2010}
+  ])
+
+  const updateName = () => setMovies(movies.map(m => m.id == 1 ? {...m, name: "X-man"} : m))
+ 
+  return (
+    <div>
+     {movies.map((m) =>(
+      <li key={Math.random()}>{m.name}</li>
+     ))}
+     <button onClick={updateName}>Update Name</button>
+    </div>
+  )
+}
+
+export default App
+*/
+
+//Shareing state using propt^^^^^^^^^^^^
+/*
+
+import React, { useState } from 'react'
+import Component1 from './File/usestate1.2/Component1'
+import Component2 from './File/usestate1.2/Component2'
+
+
+const App = () => {
+  const [count, setCount] = useState(0)
+  return (
+    <div>
+      <Component1 count={count} onClickHandler={() => setCount(count + 1)}/> //we share onClickHandler so when component1 clik this event it work on both component
+      <Component2 count={count} onClickHandler={() =>setCount(count + 1)}/> //because count is share from parent element to child element
+      
+    </div>
+  )
+}
+
+export default App
+*/
+
