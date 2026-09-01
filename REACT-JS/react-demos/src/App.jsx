@@ -896,3 +896,17 @@ const App = () => {
 export default App
 */
 
+//Passing arrow funtion^^^^^^^^^^^^^^
+import React from 'react'
+import DefaultUsestate from './File/usestate1.2/DefaultUsestate'
+
+const App = () => {
+  return (
+    <div>
+      <DefaultUsestate/>
+    </div>
+  )
+}
+
+export default App
+
