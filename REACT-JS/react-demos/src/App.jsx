@@ -718,7 +718,7 @@ const App = () => {
 
 export default App 
 */
-// Challenge 10- -----------------(Redo)
+// Challenge 10- - ----------------(Redo)
 /*
 import React from 'react'
 import Counter from './Challenges/10.UseState/Counter'
@@ -734,39 +734,6 @@ const App = () => {
       { <Profile/> } 
       {<ShopppngList/> } //Revise
     </div>
-  )
-}
-
-export default App
-*/
-
-// 12. Portal in reactjs 
-//Portal is a feature that allows you to render a child component into a DOM node that exists outside the hierarchy of the parent component. This can be useful for scrnarios like modelsm, tooltips or dropdowns, where you want to break out of the usual parent-child strudture and render in a different part of the DOM
-/*
-import React from 'react'
-import CopyInput from './File/Portal/CopyInput'
-import Swithc from './File/Portal/Swithc'
-
-const App = () => {
-  return (
-    <div>
-      { <CopyInput/> }  //Revise
-      { <Swithc/> } //Revise
-    </div> 
-  )
-}
-
-export default App
-*/
-
-// 13. useEffect() in reactjs
-
-/*
-import React from 'react'
-
-const App = () => {
-  return (
-    <div>App</div>
   )
 }
 
@@ -897,6 +864,7 @@ export default App
 */
 
 //Passing arrow funtion^^^^^^^^^^^^^^
+/*
 import React from 'react'
 import DefaultUsestate from './File/usestate1.2/DefaultUsestate'
 
@@ -909,4 +877,41 @@ const App = () => {
 }
 
 export default App
+*/
+
+
+// 13. Portal in reactjs 
+//Portal is a feature that allows you to render a child component into a DOM node that exists outside the hierarchy of the parent component. This can be useful for scrnarios like modelsm, tooltips or dropdowns, where you want to break out of the usual parent-child strudture and render in a different part of the DOM
+/*
+import React from 'react'
+import CopyInput from './File/Portal/CopyInput'
+import Swithc from './File/Portal/Swithc'
+
+const App = () => {
+  return (
+    <div>
+      { <CopyInput/> }  //Revise
+      { <Swithc/> } //Revise
+      </div> 
+    )
+  }
+  
+  export default App
+  
+*/
+// 13(1). Portal in react js
+/*
+import React from 'react'
+import CopyInput1 from './File/Portal/CopyInput1'
+
+const App = () => {
+  return (
+    <div>
+      <CopyInput1/>
+    </div>
+  )
+}
+
+export default App
+*/
 
